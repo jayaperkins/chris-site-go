@@ -1,0 +1,224 @@
+.description,
+.name {
+    color: #fff;
+    font-family: 'Great Vibes', cursive;
+}
+
+.description,
+.main-nav,
+.name,
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+* {
+    box-sizing: border-box
+}
+
+body,
+html {
+    height: 100%
+}
+
+header {
+    height: 100%;
+}
+
+.name-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.name, .description, .main-nav {
+    width: 100%
+}
+
+.link-container {
+    color: white;
+}
+
+body {
+    background-image: url(../img/studio-session.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #000
+}
+
+header {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center
+}
+
+.name {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    font-size: 3rem;
+    line-height: 4rem;
+
+
+}
+
+.description {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-bottom: 0.25rem;
+}
+
+.email-button,
+.nav-link {
+    text-decoration: none;
+    font-size: 1.75rem;
+    font-family: 'Great Vibes', cursive;
+}
+
+.main-nav {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+}
+
+.link-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width:60%;
+    height: 5rem;
+    text-align: center;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.email-button,
+.nav-link,
+footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%
+}
+
+.nav-link {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    height: 3.75rem;
+    color: black;
+    background-color: white;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width:500px) {
+    body {
+        background-image: url(../img/studio-session-desktop.jpg)
+    }
+    .name {
+        font-size: 4rem;
+
+    }
+    .description {
+        font-size: 2rem
+    }
+    .link-container {
+        height: 4rem;
+        width: 40%
+    }
+
+    .nav-link {
+        font-size: 2rem;
+    }
+
+    .main-nav {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .name {
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        font-size: 6.5rem;
+    }
+
+    .description {
+        font-size: 3rem;
+    }
+
+    .nav-link {
+        font-size: 2.5rem
+    }
+
+    .link-container {
+        width: 40%;
+        margin: 1rem;
+    }
+
+    .main-nav {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+}

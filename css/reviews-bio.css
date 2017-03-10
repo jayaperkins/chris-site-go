@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box
+}
+
+html, body {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+body {
+    background-color: black;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+}
+
+.review-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 80%;
+    margin: 2rem;
+}
+
+h1, p {
+    font-family: 'Amiri', serif;
+    color: white;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+.profile-image {
+    width: 300px;
+    height: auto;
+    margin-top: 10rem;
+}
+
+.signature {
+    margin: 2rem;
+    font-family: 'Great Vibes', cursive;
+    font-size: 4rem;
+}
+
+.description {
+    margin: 1rem 1rem 10rem 0;
+}
+
+@media screen and (min-width: 600px) {
+    .profile-image {
+        width: 500px;
+        margin-top: 6rem;
+    }
+
+    .description {
+        margin: 1rem 1rem 6rem 1rem;
+    }
+}
+
