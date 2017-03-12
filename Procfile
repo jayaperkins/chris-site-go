@@ -1,1 +1,1 @@
-web: main.go
+web: chris-heroku-site-go
